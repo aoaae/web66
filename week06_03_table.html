@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์สอนภาษา HTML">
+    <meta name="author" content="suksawat">
+    <meta name="keywords" content="HTML CSS Bootstrap">
+    <title>table</title>  
+</head>
+<body>
+    <h1>Welcome to Suksawat homepage</h1>
+    <hr>
+    <h3 style="text-align: right;"><a href="home.html">Back to Home</a></h3>
+
+    <!-- table  -->
+    <h2>Normal Tables</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>384244066</td>
+          <td>Suksawat Saelim</td>
+          <td>098-2466872</td>
+        </tr>
+        <tr>
+          <td>384244077</td>
+          <td>Francisco Chang</td>
+          <td>099-1234567</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><hr color="red"><br>
+    <h2>Add color in Tables by bgcolor & bordercolor</h2>
+    <table border="1" bordercolor="red">
+      <thead>
+        <tr bgcolor="pink">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>384244066</td>
+          <td>Suksawat Saelim</td>
+          <td>098-2466872</td>
+        </tr>
+        <tr>
+          <td>384244077</td>
+          <td>Francisco Chang</td>
+          <td bgcolor="yellow">099-1234567</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><hr color="red"><br>
+    <h2>Tables : width/ align/ colspan/ rowspan</h2>
+    <table border="1" width="70%">
+      <thead>
+        <tr bgcolor="pink" >
+          <th width="20%">Id</th>
+          <th>Name</th>
+          <th width="25%">Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center">384244066</td>
+          <td>Suksawat Saelim</td>
+          <td rowspan="2" align="center">098-2466872</td>
+        </tr>
+        <tr>
+          <td align="center">384244077</td>
+          <td>Francisco Chang</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" align="right" bgcolor="yellow"><b>Note : Call Teacher</b></td>
+          <td align="center">096-7654321</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br><hr color="red"><br>
+    <h2>Table : Cellpadding & Cellspacing</h2>
+    <table border="1" cellpadding="10" cellspacing="10">
+      <thead>
+        <tr bgcolor="pink">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>384244066</td>
+          <td>Suksawat Saelim</td>
+          <td>098-2466872</td>
+        </tr>
+        <tr>
+          <td>384244077</td>
+          <td>Francisco Chang</td>
+          <td bgcolor="yellow">099-1234567</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+</body>
+</html>

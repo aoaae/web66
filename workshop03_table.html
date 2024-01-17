@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์สอนภาษา HTML">
+    <meta name="author" content="suksawat">
+    <meta name="keywords" content="HTML CSS Bootstrap">
+    <title>table</title>  
+    <style>
+      /*
+      table, th, td {
+        //border: 1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        //border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      */
+
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }      
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+      td{
+        text-align:center;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      tr:nth-child(even) {
+        //background-color: #D6EEEE;
+      }
+      
+    </style>
+    
+</head>
+<body>
+    <!--    เรียนรู้การใช้คำสั่ง HTML     -->
+    <h1>Welcome to Suksawat homepage</h1>
+    <hr>
+    <h3 style="text-align: right;"><a href="home.html">Back to Home</a></h3>
+
+    <!-- table  -->
+    <h2 style="text-align: center;">รายการสินค้า</h2>
+    <table>
+      <thead bgcolor="green" style="font-style: italic;color: aliceblue;">
+        <tr>
+          <th style="width: 80px;">รหัสสินค้า</th>
+          <th style="width: 50px;">ภาพสินค้า</th>
+          <th>ชื่อสินค้า</th>
+          <th style="width: 50px;">ราคา</th>
+          <th style="width: 50px;">ดำเนินการ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P001</td>
+          <td>
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2022/04/Sushi-History.png" alt="sushi" width="50px" onclick="showImage(src)">
+          </td>
+          <td style="text-align: left;">Sushi 1</td>
+          <td>350</td>
+          <td style="background-color: rgb(160, 243, 243);">
+            <a href="#">delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>P002</td>
+          <td>
+            <img src="https://restaurantclicks.com/wp-content/uploads/2021/10/sushi-fort-worth.jpg" alt="sushi" width="50px" onclick="showImage(src)">
+          </td>
+          <td style="text-align: left;">Sushi 2</td>
+          <td>350</td>
+          <td style="background-color: rgb(160, 243, 243);">
+            <a href="#">delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>P003</td>
+          <td>
+            <img src="https://www.pbs.org/food/files/2012/09/Sushi-1-1.jpg" alt="sushi" width="50px" onclick="showImage(src)">
+          </td>
+          <td style="text-align: left;">Sushi 3</td>
+          <td>350</td>
+          <td style="background-color: rgb(160, 243, 243);">
+            <a href="#">delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>P004</td>
+          <td>
+            <img src="https://img.wongnai.com/p/256x256/2022/10/17/b161313021974b11b4d1f7ef89b81e25.jpg" alt="sushi" width="50px" onclick="showImage(src)">
+          </td>
+          <td style="text-align: left;">Sushi 4</td>
+          <td>120</td>
+          <td style="background-color: rgb(160, 243, 243);">
+            <a href="#">delete</a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="background-color: rgb(245, 92, 22);">
+          <td colspan="4" style="text-align: right;color: rgb(255, 255, 255);"><strong>ราคารวม : 500 บาท</strong></td>
+          <td><button onclick="success()">Order Now</button></td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      function success(){
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Your work has been saved',
+          showConfirmButton: false,
+          timer: 1500          
+        })
+      }
+      function showImage(src){
+        Swal.fire({
+          title: 'Sweet!',
+          text: 'Modal with a custom image.',
+          imageUrl: src,
+          imageWidth: 400,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+        })
+      }
+    </script>
+
+
+
+</body>
+</html>

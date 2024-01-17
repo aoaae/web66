@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: brown;">input element</span> can be displayed in many ways, depending on the <span style="color: brown;">type</span> attribute.</p>
+
+    <form action="">
+        <fieldset style="background-color: blanchedalmond;">
+            <legend>Text Field</legend>
+            <label for="fname">First name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="ป้อนชื่อ" required><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="ป้อนนามสกุล" required><br>
+            <label for="email">email</label><br>
+            <input type="email" name="email" id="email" placeholder="ป้อนอีเมล"><br>
+            <label for="age">age</label><br>
+            <input type="number" name="age" id="age" min="0" max="100" value="0"><br>
+            <label for="age2">age read only</label><br>
+            <input type="number" name="age2" id="age2" min="0" max="100" value="10" readonly><br>
+            <label for="birthday">birthday</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
+            <label for="tel">phone</label><br>
+            <input type="tel" name="tel" id="tel"><br>
+            <label for="url">Website</label><br>
+            <input type="url">
+        </fieldset>
+        <fieldset>
+            <legend>Radio Button</legend>
+            <label for="gender">Sex :</label>
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="F">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="hobby">Hobby :</label>
+            <input type="checkbox" name="hob1" id="eat" value="Eat">
+            <label for="eat">Eat</label>
+            <input type="checkbox" name="hob2" id="sleep" value="Sleep">
+            <label for="eat">Eat</label>
+            <input type="checkbox" name="hob3" id="code" value="Code">
+            <label for="eat">Eat</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select</legend>
+            <label for="province">Province :</label>
+            <select name="province" id="province">
+                <option value="Bangkok">Bangkok</option>
+                <option value="Nakhon Pathom">Nakhon Pathom</option>
+                <option value="Songkla" selected>Songkla</option>
+            </select>
+            <br><br>
+            <label for="subjects">Favorite subject:</label>
+            <select id="subjects" name="subjects" size="3"  style="background-color: #fffd73;">
+                <option value="thai">Thai</option>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="computer">Computer</option>
+            </select>
+            <label for="subject" style="margin-left: 40px;">Select multiple subject:</label>
+            <select id="subject" name="subject" size="3" multiple>
+                <option value="thai">Thai</option>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="computer">Computer</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" cols="50" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Datalist</legend>
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>          
+        </fieldset>
+        <fieldset>
+            <legend>Other</legend>
+            <label for="color">favorite color :</label>
+            <input type="color" name="color"><br><br>
+            <label for="attach">Attachment :</label>
+            <input type="file"> <br>
+          
+        </fieldset>
+
+
+        <br><br>
+        <input type="submit" value="ยืนยัน">
+        <input type="reset">
+        <button type="reset">เคลียร์ข้อมูล</button>
+        <a href="home.html"><input type="button" value="เกี่ยวกับฉัน"></a>        
+        <a href="home.html"><button type="button">กลับหน้าหลัก</button></a>
+    </form>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+</body>
+</html>

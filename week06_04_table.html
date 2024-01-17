@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์สอนภาษา HTML">
+    <meta name="author" content="suksawat">
+    <meta name="keywords" content="HTML CSS Bootstrap">
+    <title>table</title>  
+    <style>
+      table, th, td {
+        border: 1px solid rgb(0, 0, 0);
+        //border-collapse: collapse;
+        //border-radius: 10px;
+        //padding-left: 15px;
+        //padding-right: 15px;
+      }
+      th{
+        //text-align:center;
+        background-color: aquamarine;
+      }
+      tr:nth-child(even) {
+        //background-color: #D6EEEE;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Welcome to Suksawat homepage</h1>
+    <hr>
+    <h3 style="text-align: right;"><a href="home.html">Back to Home</a></h3>
+
+    <!-- table  -->
+    <h2>Tables by CSS</h2>
+    <p>Add border in Tables by border</p>
+    <p>Add color in Tables by background-color</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>384244066</td>
+          <td>Suksawat Saelim</td>
+          <td>098-2466872</td>
+        </tr>
+        <tr>
+          <td>384244077</td>
+          <td>Francisco Chang</td>
+          <td>099-1234567</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <br><hr color="red"><br>
+    <h2>Table with inline CSS</h2>
+    <table style="border: 1px solid red; background-color: rgb(218, 183, 251);">
+      <tr>
+        <th style="border: 1px solid red; background-color: rgb(43, 226, 195);">Id</th>
+        <th style="border: 1px solid red; background-color: rgb(43, 226, 195);">Name</th>
+        <th style="border: 1px solid red; background-color: rgb(226, 43, 165);">Phone No.</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid red;">384244066</td>
+        <td style="border: 1px solid red;">Suksawat Saelim</td>
+        <td style="border: 1px solid red;">098-2466872</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid red;">384244077</td>
+        <td style="border: 1px solid red;">Francisco Chang</td>
+        <td style="border: 1px solid red;">099-1234567</td>
+      </tr>
+    </table>
+
+
+    <br><hr color="red"><br>
+    <h2>Left-align Headers/ width 100%</h2>
+
+    <p>To left-align the table headers, use the CSS text-align property.</p>
+    
+    <table style="width:100%">
+      <tr>
+        <th style="text-align: left;">Firstname</th>
+        <th style="text-align: left;">Lastname</th>
+        <th style="text-align: left;">Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>  
+    
+    <br><hr color="red"><br>
+    <h2>Set the width of the first column to 70%:</h2>   
+    <table style="width:100%">
+      <tr>
+        <th style="width:70%">Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    
+
+    <br><hr color="red"><br>
+    <h2>Set the height of the second row to 100 pixels:</h2>   
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr style="height:100px">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <br><hr color="red"><br>
+    <h2>Vertical Table Headers</h2>   
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+    
+    <br><hr color="red"><br>
+    <h2>Header for Multiple Columns</h2>   
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    
+
+</body>
+</html>

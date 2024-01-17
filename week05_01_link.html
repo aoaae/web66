@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์สอนภาษา HTML">
+    <meta name="author" content="suksawat">
+    <meta name="keywords" content="HTML CSS Bootstrap">
+    <title>link</title>
+
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style> 
+
+  
+</head>
+<body>
+    <!--    เรียนรู้การใช้คำสั่ง HTML     -->
+    <h1>Welcome to Suksawat homepage</h1>
+    <hr>
+    <h3 style="text-align: right;"><a href="home.html">Back to Home</a></h3>
+
+    <!-- Link  -->
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h3>HTML Links - The target Attribute</h3>
+    <p><a href="https://www.npru.ac.th/" target="_blank">Visit NPRU! ==> _blank</a></p>
+    <p><a href="https://www.npru.ac.th/" target="_blank">Visit NPRU! ==> _self</a></p>
+    <p><a href="https://www.npru.ac.th/" target="_blank">Visit NPRU! ==> _parent</a></p>
+    <p><a href="https://www.npru.ac.th/" target="_blank">Visit NPRU! ==> _top</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.html">HTML Images</a></p>
+    <p><a href="/css/default.html">CSS Tutorial</a></p>
+
+    <h2>Link to an Email Address</h2>
+    <p><a href="mailto:someone@example.com">Send email</a></p>
+    
+    <h2>Button as a Link</h2>
+    <p><button onclick="document.location='home.html'">Home</button></p>
+
+    <h2>Link Titles</h2>
+    <p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a></p>
+ 
+</body>
+</html>

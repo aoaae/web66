@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+html,body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    
+}
+
+
+/* ---------------Start Header--------------- */
+header {
+    /* border: 1px solid rgb(26, 255, 1); */
+    background-color: #37517E;
+
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* align-items: center; */
+}
+
+nav {
+    background-color: #37517E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    /* margin: auto 16px; */
+    /* display: flex; */
+    /* align-items: center; */
+    text-transform: uppercase;
+}
+
+.menu {
+    /* background-color: bisque; */
+    display: flex;
+    list-style: none;  
+}
+
+li{
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero {
+    background-color: #37517E;
+    width: 1000px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    /* background-color: aqua; */
+    text-transform: capitalize
+}
+
+
+.hero-button--box {
+    display: flex;
+    /* align-items: center; */
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: #488edf;
+    padding: 8px 24px;
+    border-radius: 30px;
+    margin-right: 15px;
+
+    /* text-decoration: none; */
+    /* display: inline-block; */
+}
+
+.bt-watch {
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------End Header--------------- */
+
+
+/* ---------------Start Section-Pricing--------------- */
+
+.pricing {
+    width: 1000px;
+    margin: auto;
+
+
+    /* height: 400px; */
+}
+
+.text-h1 {
+    color: #1057a9;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text-param {
+    color: #090909;
+    text-align: center;
+    /* width: 1000px; */
+    /* margin: auto; */
+}
+
+.section-box {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.section-box--plan {
+    width: 25%;
+    /* height: 300px; */
+    /* background-color: #488edf; */
+    /* border: 1px solid ; */
+
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0.5px #888888; 
+    border-radius: 5px;
+    
+    font-size: 12px;
+    color: #090909;
+    /* line-height: 8px; */
+
+    & .h-image {
+        height: 12px;
+    }
+}
+
+/* ---------------End Section-Pricing--------------- */
+
+
+
+
+/* ---------------Start Section-Member--------------- */
+.member {
+    /* width: 1000px; */
+    /* height: 300px; */
+    background-color: #F3F5FA;
+    padding: 50px 0px;
+
+    color: #090909;
+
+}
+
+.member-box {
+    width: 900px;
+    background-color: #ffffff;
+    margin: auto;
+    
+    /* padding: 1px 40px 40px 40px; */
+    padding: 1px 40px 50px;
+    box-shadow: 0px 0px 5px 0.5px #888888; 
+    border-radius: 5px;
+
+
+}
+
+table, th, td {
+    margin: auto;
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px 15px;
+  } 
+
+  th {
+    background-color: #96D4D4;
+  }
+
+
+/* ---------------End Section-Member--------------- */
+
+
+
+
+
+/* ---------------Start Section-Contact--------------- */
+.contact {
+    width: 1000px;
+    margin: auto;
+    height: 400px;
+    background-color: #fecece;
+}
+/* ---------------End Section-Contact--------------- */
+
+
+
+
+
+
+footer {
+    background-color: #37517E;
+    /* color: white; */
+    padding: 10px;
+    text-align: center;
+}

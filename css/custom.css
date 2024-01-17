@@ -1,0 +1,71 @@
+main{
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+header{
+    //background-color: rgb(255, 174, 0);
+    overflow: hidden;
+}
+.logo{
+    //background-color: brown;
+    width: 50px;
+    float: left;
+}
+.logoName{
+    //background-color: blueviolet;
+    margin-top: 10px;
+    float: left;
+}
+.menu{
+    //background-color: rgb(172, 190, 90);
+    width: 400px;
+    float: right;
+    margin-top: 5px;
+}
+.slide{
+    background-color: blueviolet;
+    height: 200px;
+}
+.content{
+    //background-color: rgb(189, 54, 54);
+    overflow: hidden;
+    margin: 10px 35px;
+}
+.subcontent{
+    float: left;
+    background-color: FFE7CC;
+    width: 270px;
+    height: 330px;
+    //margin-right: 10px;
+    //margin-left: 10px;
+    border-radius: 10px;
+
+    margin: 10px;    
+    padding: 10px;
+    box-shadow: 1px 1px 6px 1px royalblue;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    float: left;
+    margin: 5px;
+}
+img.logo1{
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+body{
+    background-image: linear-gradient(to right, #0057c1, #0081d6, #37a8e3, #7cccec, #bfeef8);
+}
+footer{
+    background-color: #0081d6;
+    border-radius: 0px 0px 10px 10px;
+}
